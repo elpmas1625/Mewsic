@@ -6,9 +6,9 @@ import 'package:mewsic/lib/music_app/models/playlist.dart';
 void main() {
   group('MusicPlayerService Tests', () {
     late MusicPlayerService musicService;
-    const song1 = Song(title: 'Song 1', artist: 'Artist 1', album: 'Album 1', duration: Duration(minutes: 3), filePath: 's1.mp3');
-    const song2 = Song(title: 'Song 2', artist: 'Artist 2', album: 'Album 2', duration: Duration(minutes: 4), filePath: 's2.mp3');
-    const song3 = Song(title: 'Song 3', artist: 'Artist 3', album: 'Album 3', duration: Duration(minutes: 2), filePath: 's3.mp3');
+    const song1 = Song(title: 'Song 1', artist: 'Artist 1', album: 'Album 1', duration: Duration(minutes: 3), filePath: 's1.mp3', coverArtUrl: 'http://example.com/s1.jpg');
+    const song2 = Song(title: 'Song 2', artist: 'Artist 2', album: 'Album 2', duration: Duration(minutes: 4), filePath: 's2.mp3', coverArtUrl: 'http://example.com/s2.jpg');
+    const song3 = Song(title: 'Song 3', artist: 'Artist 3', album: 'Album 3', duration: Duration(minutes: 2), filePath: 's3.mp3', coverArtUrl: 'http://example.com/s3.jpg');
 
     setUp(() {
       musicService = MusicPlayerService();

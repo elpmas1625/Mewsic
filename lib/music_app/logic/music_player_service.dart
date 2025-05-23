@@ -42,9 +42,15 @@ class MusicPlayerService extends ChangeNotifier {
 
   /// Stream of player state changes.
   Stream<PlayerState> get playerStateStream => _playerStateController.stream;
-
   /// Stream of the current song.
   Stream<Song?> get currentSongStream => _currentSongController.stream;
+
+  // --- Direct Getters for UI (backed by ChangeNotifier) ---
+  /// Gets the current song.
+  Song? get currentSong => _currentSong;
+  /// Gets the current player state.
+  PlayerState get playerState => _playerState;
+  // currentPosition and totalDuration are already public getters.
 
   // --- Playback Methods ---
 

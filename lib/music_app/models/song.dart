@@ -4,6 +4,7 @@ class Song {
   final String album;  // Or albumId
   final Duration duration;
   final String filePath;
+  final String? coverArtUrl; // Added nullable coverArtUrl
 
   const Song({
     required this.title,
@@ -11,5 +12,6 @@ class Song {
     required this.album,
     required this.duration,
     required this.filePath,
+    this.coverArtUrl, // Added to constructor as optional
   });
 }
